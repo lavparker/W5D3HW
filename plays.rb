@@ -31,7 +31,7 @@ class Play
     PlayDBConnection.instance.execute(<<-SQL, self.title, self.year, self.playwright_id)
       INSERT INTO
         plays (title, year, playwright_id)
-      VALUESp
+      VALUESpjfjowf
         (?, ?, ?)
     SQL
     self.id = PlayDBConnection.instance.last_insert_row_id
